@@ -1,0 +1,92 @@
+/* عام */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* box-sizing */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  direction: rtl; /* من اليمين لليسار */
+  text-align: right; /* محاذاة النصوص */
+  background: #f9f9f9;
+}
+
+/* الهيدر */
+.header {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  position: sticky; /* position */
+  top: 0;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block; /* inline-block */
+}
+
+.nav a:hover {
+  color: #00f; /* pseudo-class */
+}
+
+/* المحتوى */
+.container {
+  width: 90%;
+  margin: 20px auto;
+  overflow: hidden; /* overflow */
+}
+
+.content {
+  float: right; /* float */
+  width: 70%;
+}
+
+.sidebar {
+  float: left; /* يبقى الشريط على اليسار */
+  width: 25%;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.clear {
+  clear: both; /* clear */
+}
+
+.post {
+  margin-bottom: 20px;
+  display: block; /* display block */
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* الصورة داخل المقال */
+.post-img {
+  float: right;          /* الصورة على اليمين */
+  margin-left: 10px;     /* مسافة يسار الصورة */
+  margin-bottom: 10px;
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* الفوتر باستخدام flex */
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  display: flex;               /* flex */
+  justify-content: space-between; /* توزيع العناصر */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 5px;
+}
